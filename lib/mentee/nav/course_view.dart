@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../pages/course/materi_list.dart';
 import '../pages/course/tugas_list.dart';
-// import 'package:infinite_learning/nav/course_view.dart';
-// import 'package:infinite_learning/pages/course/add_tugas_page.dart';
 
 class CourseView extends StatefulWidget {
   const CourseView({super.key});
@@ -160,6 +158,7 @@ class _CourseViewState extends State<CourseView> {
                         Image.asset(
                           'assets/images/link.png',
                           height: 20,
+                          color: Colors.white,
                         ),
                         SizedBox(width: 8),
                         Text("Link Zoom",
@@ -209,6 +208,7 @@ class _CourseViewState extends State<CourseView> {
                         Image.asset(
                           'assets/images/link.png',
                           height: 20,
+                          color: Colors.white,
                         ),
                         SizedBox(width: 8),
                         Text("Link Zoom",
@@ -258,6 +258,7 @@ class _CourseViewState extends State<CourseView> {
                         Image.asset(
                           'assets/images/link.png',
                           height: 20,
+                          color: Colors.white,
                         ),
                         SizedBox(width: 8),
                         Text("Link Zoom",
@@ -307,25 +308,13 @@ class _CourseViewState extends State<CourseView> {
                               fontSize: 16,
                               height: 1.4,
                               fontWeight: FontWeight.bold))),
-                  // GestureDetector(
-                  //     onTap: () {
-                  //       // Navigator.push(
-                  //       //     context,
-                  //       //     MaterialPageRoute(
-                  //       //         builder: (BuildContext context) =>
-                  //       //             AddPengumumanPage("Tambah")));
-                  //     },
-                  //     child: Icon(
-                  //       Icons.add_circle_outline,
-                  //       size: 24,
-                  //     ))
                 ],
               )),
               SizedBox(height: 7),
               Container(
                 padding: EdgeInsets.only(left: 15, top: 15, bottom: 15),
                 decoration: BoxDecoration(
-                  color: Colors.blue[50],
+                  color: Color.fromARGB(255, 28, 104, 158),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Row(
@@ -340,23 +329,22 @@ class _CourseViewState extends State<CourseView> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Roy Prasetya",
+                              Text("Jessica Aulia",
                                   style: TextStyle(
                                       fontSize: 14,
                                       height: 1.4,
-                                      color: Colors.black,
-                                      // decoration: TextDecoration.underline,
+                                      color: Colors.white,
                                       fontWeight: FontWeight.bold)),
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.account_box, size: 16),
+                                  Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
                                   SizedBox(width: 2),
-                                  Text("14 Okt 2023",
+                                  Text("22 Dec 2023",
                                       style: TextStyle(
                                           fontSize: 11,
                                           height: 1.4,
-                                          color: Colors.black,
+                                          color: Colors.white,
                                           // decoration: TextDecoration.underline,
                                           fontWeight: FontWeight.normal)),
                                 ],
@@ -365,10 +353,11 @@ class _CourseViewState extends State<CourseView> {
                           ),
                           SizedBox(height: 10),
                           Text(
-                              "Hari ini akan presentasi proyek yang akan menjelaskan progress pengerjaan proyek yang sudah dikerjakan oleh tim",
+                              "Halo semua, Akhirnya kita sudah sampai di ujung kegiatan kita. Selamat berjumap di kesempatan lainnya. Senang bisa mengenal kalian semua.",
                               style: TextStyle(
                                   fontSize: 12,
                                   height: 1.4,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.normal)),
                         ],
                       )),
@@ -381,7 +370,7 @@ class _CourseViewState extends State<CourseView> {
         Container(
           padding: EdgeInsets.only(left: 15, top: 15, bottom: 15),
           decoration: BoxDecoration(
-            color: Colors.blue[50],
+            color: Color.fromARGB(255, 28, 104, 158),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -394,23 +383,23 @@ class _CourseViewState extends State<CourseView> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Roy Prasetya",
+                    Text("Jessica Aulia",
                         style: TextStyle(
                             fontSize: 14,
                             height: 1.4,
-                            color: Colors.black,
+                            color: Colors.white,
                             // decoration: TextDecoration.underline,
                             fontWeight: FontWeight.bold)),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16),
+                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
                         SizedBox(width: 2),
-                        Text("14 Okt 2023",
+                        Text("25 Nov 2023",
                             style: TextStyle(
                                 fontSize: 11,
                                 height: 1.4,
-                                color: Colors.black,
+                                color: Colors.white,
                                 // decoration: TextDecoration.underline,
                                 fontWeight: FontWeight.normal)),
                       ],
@@ -419,110 +408,21 @@ class _CourseViewState extends State<CourseView> {
                 ),
                 SizedBox(height: 10),
                 Text(
-                    "Hari ini akan presentasi proyek yang akan menjelaskan progress pengerjaan proyek yang sudah dikerjakan oleh tim",
+                    "Halo semua nggak kerasa kita udah deket akhir kegiatan Studi Independen, tetep semangat ngerjain proyek dan jaga kesehatan ya. ",
                     style: TextStyle(
                         fontSize: 12,
                         height: 1.4,
+                        color: Colors.white,
                         fontWeight: FontWeight.normal)),
               ],
             )),
-            SizedBox(width: 8),
-            // PopupMenuButton(
-            //   padding: EdgeInsets.zero,
-            //   itemBuilder: (context) {
-            //     return [
-            //       PopupMenuItem(
-            //         value: 'edit',
-            //         child: Text('Edit'),
-            //       ),
-            //       PopupMenuItem(
-            //         value: 'delete',
-            //         child: Text('Delete'),
-            //       )
-            //     ];
-            //   },
-            //   onSelected: (String value) {
-            //     print('You Click on po up menu item');
-            //     if (value == "edit") {
-            //       // Navigator.push(
-            //       //     context,
-            //       //     MaterialPageRoute(
-            //       //         builder: (BuildContext context) =>
-            //       //             AddPengumumanPage("Edit")));
-            //     } else {
-            //       showDialog(
-            //           context: context,
-            //           builder: (BuildContext context) {
-            //             return Dialog(
-            //               shape: RoundedRectangleBorder(
-            //                   borderRadius: BorderRadius.circular(10.0)),
-            //               child: Container(
-            //                 padding: EdgeInsets.symmetric(
-            //                     vertical: 20, horizontal: 0),
-            //                 height: 250,
-            //                 child: Column(
-            //                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //                   children: [
-            //                     Image.asset('assets/images/alert.png',
-            //                         height: 100),
-            //                     SizedBox(height: 10),
-            //                     Text(
-            //                       "Apakah kamu yakin ingin menghapus Pengumuman?",
-            //                       textAlign: TextAlign.center,
-            //                       style: TextStyle(fontSize: 16, height: 1.3),
-            //                     ),
-            //                     SizedBox(height: 10),
-            //                     Container(
-            //                       child: Row(
-            //                           mainAxisAlignment:
-            //                               MainAxisAlignment.center,
-            //                           children: [
-            //                             Container(
-            //                               width: 80,
-            //                               alignment: Alignment.center,
-            //                               padding: EdgeInsets.symmetric(
-            //                                   // horizontal: 35,
-            //                                   vertical: 8),
-            //                               decoration: BoxDecoration(
-            //                                   borderRadius:
-            //                                       BorderRadius.circular(5),
-            //                                   color: Colors.grey[300]),
-            //                               child: Text("Tidak"),
-            //                             ),
-            //                             SizedBox(width: 10),
-            //                             Container(
-            //                               alignment: Alignment.center,
-            //                               width: 80,
-            //                               padding: EdgeInsets.symmetric(
-            //                                   // horizontal: 30,
-            //                                   vertical: 8),
-            //                               decoration: BoxDecoration(
-            //                                   borderRadius:
-            //                                       BorderRadius.circular(5),
-            //                                   color: Colors.redAccent),
-            //                               child: Text(
-            //                                 "Ya",
-            //                                 style:
-            //                                     TextStyle(color: Colors.white),
-            //                               ),
-            //                             )
-            //                           ]),
-            //                     )
-            //                   ],
-            //                 ),
-            //               ),
-            //             );
-            //           });
-            //     }
-            //   },
-            // )
           ]),
         ),
         SizedBox(height: 20),
         Container(
           padding: EdgeInsets.only(left: 15, top: 15, bottom: 15),
           decoration: BoxDecoration(
-            color: Colors.blue[50],
+            color: Color.fromARGB(255, 28, 104, 158),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -535,23 +435,23 @@ class _CourseViewState extends State<CourseView> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Roy Prasetya",
+                    Text("Jessica Aulia",
                         style: TextStyle(
                             fontSize: 14,
                             height: 1.4,
-                            color: Colors.black,
+                            color: Colors.white,
                             // decoration: TextDecoration.underline,
                             fontWeight: FontWeight.bold)),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16),
+                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
                         SizedBox(width: 2),
-                        Text("14 Okt 2023",
+                        Text("12 Okt 2023",
                             style: TextStyle(
                                 fontSize: 11,
                                 height: 1.4,
-                                color: Colors.black,
+                                color: Colors.white,
                                 // decoration: TextDecoration.underline,
                                 fontWeight: FontWeight.normal)),
                       ],
@@ -564,106 +464,17 @@ class _CourseViewState extends State<CourseView> {
                     style: TextStyle(
                         fontSize: 12,
                         height: 1.4,
+                        color: Colors.white,
                         fontWeight: FontWeight.normal)),
               ],
             )),
-            SizedBox(width: 8),
-            // PopupMenuButton(
-            //   padding: EdgeInsets.zero,
-            //   itemBuilder: (context) {
-            //     return [
-            //       PopupMenuItem(
-            //         value: 'edit',
-            //         child: Text('Edit'),
-            //       ),
-            //       PopupMenuItem(
-            //         value: 'delete',
-            //         child: Text('Delete'),
-            //       )
-            //     ];
-            //   },
-            //   onSelected: (String value) {
-            //     print('You Click on po up menu item');
-            //     if (value == "edit") {
-            //       // Navigator.push(
-            //       //     context,
-            //       //     MaterialPageRoute(
-            //       //         builder: (BuildContext context) =>
-            //       //             AddPengumumanPage("Edit")));
-            //     } else {
-            //       showDialog(
-            //           context: context,
-            //           builder: (BuildContext context) {
-            //             return Dialog(
-            //               shape: RoundedRectangleBorder(
-            //                   borderRadius: BorderRadius.circular(10.0)),
-            //               child: Container(
-            //                 padding: EdgeInsets.symmetric(
-            //                     vertical: 20, horizontal: 0),
-            //                 height: 250,
-            //                 child: Column(
-            //                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //                   children: [
-            //                     Image.asset('assets/images/alert.png',
-            //                         height: 100),
-            //                     SizedBox(height: 10),
-            //                     Text(
-            //                       "Apakah kamu yakin ingin menghapus Pengumuman?",
-            //                       textAlign: TextAlign.center,
-            //                       style: TextStyle(fontSize: 16, height: 1.3),
-            //                     ),
-            //                     SizedBox(height: 10),
-            //                     Container(
-            //                       child: Row(
-            //                           mainAxisAlignment:
-            //                               MainAxisAlignment.center,
-            //                           children: [
-            //                             Container(
-            //                               width: 80,
-            //                               alignment: Alignment.center,
-            //                               padding: EdgeInsets.symmetric(
-            //                                   // horizontal: 35,
-            //                                   vertical: 8),
-            //                               decoration: BoxDecoration(
-            //                                   borderRadius:
-            //                                       BorderRadius.circular(5),
-            //                                   color: Colors.grey[300]),
-            //                               child: Text("Tidak"),
-            //                             ),
-            //                             SizedBox(width: 10),
-            //                             Container(
-            //                               alignment: Alignment.center,
-            //                               width: 80,
-            //                               padding: EdgeInsets.symmetric(
-            //                                   // horizontal: 30,
-            //                                   vertical: 8),
-            //                               decoration: BoxDecoration(
-            //                                   borderRadius:
-            //                                       BorderRadius.circular(5),
-            //                                   color: Colors.redAccent),
-            //                               child: Text(
-            //                                 "Ya",
-            //                                 style:
-            //                                     TextStyle(color: Colors.white),
-            //                               ),
-            //                             )
-            //                           ]),
-            //                     )
-            //                   ],
-            //                 ),
-            //               ),
-            //             );
-            //           });
-            //     }
-            //   },
-            // )
           ]),
         ),
         SizedBox(height: 20),
         Container(
           padding: EdgeInsets.only(left: 15, top: 15, bottom: 15),
           decoration: BoxDecoration(
-            color: Colors.blue[50],
+            color: Color.fromARGB(255, 28, 104, 158),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -676,23 +487,23 @@ class _CourseViewState extends State<CourseView> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Roy Prasetya",
+                    Text("Lauren Allow",
                         style: TextStyle(
                             fontSize: 14,
                             height: 1.4,
-                            color: Colors.black,
+                            color: Colors.white,
                             // decoration: TextDecoration.underline,
                             fontWeight: FontWeight.bold)),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16),
+                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white,),
                         SizedBox(width: 2),
-                        Text("14 Okt 2023",
+                        Text("18 Augt 2023",
                             style: TextStyle(
                                 fontSize: 11,
                                 height: 1.4,
-                                color: Colors.black,
+                                color: Colors.white,
                                 // decoration: TextDecoration.underline,
                                 fontWeight: FontWeight.normal)),
                       ],
@@ -701,110 +512,21 @@ class _CourseViewState extends State<CourseView> {
                 ),
                 SizedBox(height: 10),
                 Text(
-                    "Hari ini akan presentasi proyek yang akan menjelaskan progress pengerjaan proyek yang sudah dikerjakan oleh tim",
+                    "Hai Guys, siapa yang udah ga sabar our first class tomorrow??\nSampai jumpa besok ya temen - temen jangan begadang dan jaga stay healthy",
                     style: TextStyle(
                         fontSize: 12,
                         height: 1.4,
+                        color: Colors.white,
                         fontWeight: FontWeight.normal)),
               ],
             )),
-            SizedBox(width: 8),
-            // PopupMenuButton(
-            //   padding: EdgeInsets.zero,
-            //   itemBuilder: (context) {
-            //     return [
-            //       PopupMenuItem(
-            //         value: 'edit',
-            //         child: Text('Edit'),
-            //       ),
-            //       PopupMenuItem(
-            //         value: 'delete',
-            //         child: Text('Delete'),
-            //       )
-            //     ];
-            //   },
-            //   onSelected: (String value) {
-            //     print('You Click on po up menu item');
-            //     if (value == "edit") {
-            //       // Navigator.push(
-            //       //     context,
-            //       //     MaterialPageRoute(
-            //       //         builder: (BuildContext context) =>
-            //       //             AddPengumumanPage("Edit")));
-            //     } else {
-            //       showDialog(
-            //           context: context,
-            //           builder: (BuildContext context) {
-            //             return Dialog(
-            //               shape: RoundedRectangleBorder(
-            //                   borderRadius: BorderRadius.circular(10.0)),
-            //               child: Container(
-            //                 padding: EdgeInsets.symmetric(
-            //                     vertical: 20, horizontal: 0),
-            //                 height: 250,
-            //                 child: Column(
-            //                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //                   children: [
-            //                     Image.asset('assets/images/alert.png',
-            //                         height: 100),
-            //                     SizedBox(height: 10),
-            //                     Text(
-            //                       "Apakah kamu yakin ingin menghapus Pengumuman?",
-            //                       textAlign: TextAlign.center,
-            //                       style: TextStyle(fontSize: 16, height: 1.3),
-            //                     ),
-            //                     SizedBox(height: 10),
-            //                     Container(
-            //                       child: Row(
-            //                           mainAxisAlignment:
-            //                               MainAxisAlignment.center,
-            //                           children: [
-            //                             Container(
-            //                               width: 80,
-            //                               alignment: Alignment.center,
-            //                               padding: EdgeInsets.symmetric(
-            //                                   // horizontal: 35,
-            //                                   vertical: 8),
-            //                               decoration: BoxDecoration(
-            //                                   borderRadius:
-            //                                       BorderRadius.circular(5),
-            //                                   color: Colors.grey[300]),
-            //                               child: Text("Tidak"),
-            //                             ),
-            //                             SizedBox(width: 10),
-            //                             Container(
-            //                               alignment: Alignment.center,
-            //                               width: 80,
-            //                               padding: EdgeInsets.symmetric(
-            //                                   // horizontal: 30,
-            //                                   vertical: 8),
-            //                               decoration: BoxDecoration(
-            //                                   borderRadius:
-            //                                       BorderRadius.circular(5),
-            //                                   color: Colors.redAccent),
-            //                               child: Text(
-            //                                 "Ya",
-            //                                 style:
-            //                                     TextStyle(color: Colors.white),
-            //                               ),
-            //                             )
-            //                           ]),
-            //                     )
-            //                   ],
-            //                 ),
-            //               ),
-            //             );
-            //           });
-            //     }
-            //   },
-            // )
           ]),
         ),
         SizedBox(height: 20),
         Container(
           padding: EdgeInsets.only(left: 15, top: 15, bottom: 15),
           decoration: BoxDecoration(
-            color: Colors.blue[50],
+            color: Color.fromARGB(255, 28, 104, 158),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -817,24 +539,22 @@ class _CourseViewState extends State<CourseView> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Roy Prasetya",
+                    Text("Lauren Allow",
                         style: TextStyle(
                             fontSize: 14,
                             height: 1.4,
-                            color: Colors.black,
-                            // decoration: TextDecoration.underline,
+                            color: Colors.white,
                             fontWeight: FontWeight.bold)),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16),
+                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
                         SizedBox(width: 2),
-                        Text("14 Okt 2023",
+                        Text("14 Agustus 2023",
                             style: TextStyle(
                                 fontSize: 11,
                                 height: 1.4,
-                                color: Colors.black,
-                                // decoration: TextDecoration.underline,
+                                color: Colors.white,
                                 fontWeight: FontWeight.normal)),
                       ],
                     )
@@ -842,110 +562,21 @@ class _CourseViewState extends State<CourseView> {
                 ),
                 SizedBox(height: 10),
                 Text(
-                    "Hari ini akan presentasi proyek yang akan menjelaskan progress pengerjaan proyek yang sudah dikerjakan oleh tim",
+                    "Halo teman - teman welcome to Infinite Learning!!\nIni adalah aplikasi yang akan kita pakai selama kegiatan Studi Independen\nNice To Meet You Yaa:)",
                     style: TextStyle(
                         fontSize: 12,
                         height: 1.4,
+                        color: Colors.white,
                         fontWeight: FontWeight.normal)),
               ],
             )),
-            SizedBox(width: 8),
-            // PopupMenuButton(
-            //   padding: EdgeInsets.zero,
-            //   itemBuilder: (context) {
-            //     return [
-            //       PopupMenuItem(
-            //         value: 'edit',
-            //         child: Text('Edit'),
-            //       ),
-            //       PopupMenuItem(
-            //         value: 'delete',
-            //         child: Text('Delete'),
-            //       )
-            //     ];
-            //   },
-            //   onSelected: (String value) {
-            //     print('You Click on po up menu item');
-            //     if (value == "edit") {
-            //       // Navigator.push(
-            //       //     context,
-            //       //     MaterialPageRoute(
-            //       //         builder: (BuildContext context) =>
-            //       //             AddPengumumanPage("Edit")));
-            //     } else {
-            //       showDialog(
-            //           context: context,
-            //           builder: (BuildContext context) {
-            //             return Dialog(
-            //               shape: RoundedRectangleBorder(
-            //                   borderRadius: BorderRadius.circular(10.0)),
-            //               child: Container(
-            //                 padding: EdgeInsets.symmetric(
-            //                     vertical: 20, horizontal: 0),
-            //                 height: 250,
-            //                 child: Column(
-            //                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //                   children: [
-            //                     Image.asset('assets/images/alert.png',
-            //                         height: 100),
-            //                     SizedBox(height: 10),
-            //                     Text(
-            //                       "Apakah kamu yakin ingin menghapus Pengumuman?",
-            //                       textAlign: TextAlign.center,
-            //                       style: TextStyle(fontSize: 16, height: 1.3),
-            //                     ),
-            //                     SizedBox(height: 10),
-            //                     Container(
-            //                       child: Row(
-            //                           mainAxisAlignment:
-            //                               MainAxisAlignment.center,
-            //                           children: [
-            //                             Container(
-            //                               width: 80,
-            //                               alignment: Alignment.center,
-            //                               padding: EdgeInsets.symmetric(
-            //                                   // horizontal: 35,
-            //                                   vertical: 8),
-            //                               decoration: BoxDecoration(
-            //                                   borderRadius:
-            //                                       BorderRadius.circular(5),
-            //                                   color: Colors.grey[300]),
-            //                               child: Text("Tidak"),
-            //                             ),
-            //                             SizedBox(width: 10),
-            //                             Container(
-            //                               alignment: Alignment.center,
-            //                               width: 80,
-            //                               padding: EdgeInsets.symmetric(
-            //                                   // horizontal: 30,
-            //                                   vertical: 8),
-            //                               decoration: BoxDecoration(
-            //                                   borderRadius:
-            //                                       BorderRadius.circular(5),
-            //                                   color: Colors.redAccent),
-            //                               child: Text(
-            //                                 "Ya",
-            //                                 style:
-            //                                     TextStyle(color: Colors.white),
-            //                               ),
-            //                             )
-            //                           ]),
-            //                     )
-            //                   ],
-            //                 ),
-            //               ),
-            //             );
-            //           });
-            //     }
-            //   },
-            // )
           ]),
         ),
         SizedBox(height: 20),
         Container(
           padding: EdgeInsets.only(left: 15, top: 15, bottom: 15),
           decoration: BoxDecoration(
-            color: Colors.blue[50],
+            color: Color.fromARGB(255, 28, 104, 158),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -958,24 +589,22 @@ class _CourseViewState extends State<CourseView> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Roy Prasetya",
+                    Text("Lauren Allow",
                         style: TextStyle(
                             fontSize: 14,
                             height: 1.4,
-                            color: Colors.black,
-                            // decoration: TextDecoration.underline,
+                            color: Colors.white,
                             fontWeight: FontWeight.bold)),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16),
+                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
                         SizedBox(width: 2),
-                        Text("14 Okt 2023",
+                        Text("14 Agustus 2023",
                             style: TextStyle(
                                 fontSize: 11,
                                 height: 1.4,
-                                color: Colors.black,
-                                // decoration: TextDecoration.underline,
+                                color: Colors.white,
                                 fontWeight: FontWeight.normal)),
                       ],
                     )
@@ -987,240 +616,10 @@ class _CourseViewState extends State<CourseView> {
                     style: TextStyle(
                         fontSize: 12,
                         height: 1.4,
+                        color: Colors.white,
                         fontWeight: FontWeight.normal)),
               ],
             )),
-            SizedBox(width: 8),
-            // PopupMenuButton(
-            //   padding: EdgeInsets.zero,
-            //   itemBuilder: (context) {
-            //     return [
-            //       PopupMenuItem(
-            //         value: 'edit',
-            //         child: Text('Edit'),
-            //       ),
-            //       PopupMenuItem(
-            //         value: 'delete',
-            //         child: Text('Delete'),
-            //       )
-            //     ];
-            //   },
-            //   onSelected: (String value) {
-            //     print('You Click on po up menu item');
-            //     if (value == "edit") {
-            //       // Navigator.push(
-            //       //     context,
-            //       //     MaterialPageRoute(
-            //       //         builder: (BuildContext context) =>
-            //       //             AddPengumumanPage("Edit")));
-            //     } else {
-            //       showDialog(
-            //           context: context,
-            //           builder: (BuildContext context) {
-            //             return Dialog(
-            //               shape: RoundedRectangleBorder(
-            //                   borderRadius: BorderRadius.circular(10.0)),
-            //               child: Container(
-            //                 padding: EdgeInsets.symmetric(
-            //                     vertical: 20, horizontal: 0),
-            //                 height: 250,
-            //                 child: Column(
-            //                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //                   children: [
-            //                     Image.asset('assets/images/alert.png',
-            //                         height: 100),
-            //                     SizedBox(height: 10),
-            //                     Text(
-            //                       "Apakah kamu yakin ingin menghapus Pengumuman?",
-            //                       textAlign: TextAlign.center,
-            //                       style: TextStyle(fontSize: 16, height: 1.3),
-            //                     ),
-            //                     SizedBox(height: 10),
-            //                     Container(
-            //                       child: Row(
-            //                           mainAxisAlignment:
-            //                               MainAxisAlignment.center,
-            //                           children: [
-            //                             Container(
-            //                               width: 80,
-            //                               alignment: Alignment.center,
-            //                               padding: EdgeInsets.symmetric(
-            //                                   // horizontal: 35,
-            //                                   vertical: 8),
-            //                               decoration: BoxDecoration(
-            //                                   borderRadius:
-            //                                       BorderRadius.circular(5),
-            //                                   color: Colors.grey[300]),
-            //                               child: Text("Tidak"),
-            //                             ),
-            //                             SizedBox(width: 10),
-            //                             Container(
-            //                               alignment: Alignment.center,
-            //                               width: 80,
-            //                               padding: EdgeInsets.symmetric(
-            //                                   // horizontal: 30,
-            //                                   vertical: 8),
-            //                               decoration: BoxDecoration(
-            //                                   borderRadius:
-            //                                       BorderRadius.circular(5),
-            //                                   color: Colors.redAccent),
-            //                               child: Text(
-            //                                 "Ya",
-            //                                 style:
-            //                                     TextStyle(color: Colors.white),
-            //                               ),
-            //                             )
-            //                           ]),
-            //                     )
-            //                   ],
-            //                 ),
-            //               ),
-            //             );
-            //           });
-            //     }
-            //   },
-            // )
-          ]),
-        ),
-        SizedBox(height: 20),
-        Container(
-          padding: EdgeInsets.only(left: 15, top: 15, bottom: 15),
-          decoration: BoxDecoration(
-            color: Colors.blue[50],
-            borderRadius: BorderRadius.circular(20),
-          ),
-          child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Image.asset('assets/images/profile2.png', height: 34),
-            SizedBox(width: 10),
-            Expanded(
-                child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Roy Prasetya",
-                        style: TextStyle(
-                            fontSize: 14,
-                            height: 1.4,
-                            color: Colors.black,
-                            // decoration: TextDecoration.underline,
-                            fontWeight: FontWeight.bold)),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Icon(Icons.watch_later_outlined, size: 16),
-                        SizedBox(width: 2),
-                        Text("14 Okt 2023",
-                            style: TextStyle(
-                                fontSize: 11,
-                                height: 1.4,
-                                color: Colors.black,
-                                // decoration: TextDecoration.underline,
-                                fontWeight: FontWeight.normal)),
-                      ],
-                    )
-                  ],
-                ),
-                SizedBox(height: 10),
-                Text(
-                    "Hari ini akan presentasi proyek yang akan menjelaskan progress pengerjaan proyek yang sudah dikerjakan oleh tim",
-                    style: TextStyle(
-                        fontSize: 12,
-                        height: 1.4,
-                        fontWeight: FontWeight.normal)),
-              ],
-            )),
-            SizedBox(width: 8),
-            // PopupMenuButton(
-            //   padding: EdgeInsets.zero,
-            //   itemBuilder: (context) {
-            //     return [
-            //       PopupMenuItem(
-            //         value: 'edit',
-            //         child: Text('Edit'),
-            //       ),
-            //       PopupMenuItem(
-            //         value: 'delete',
-            //         child: Text('Delete'),
-            //       )
-            //     ];
-            //   },
-            //   onSelected: (String value) {
-            //     print('You Click on po up menu item');
-            //     if (value == "edit") {
-            //       // Navigator.push(
-            //       //     context,
-            //       //     MaterialPageRoute(
-            //       //         builder: (BuildContext context) =>
-            //       //             AddPengumumanPage("Edit")));
-            //     } else {
-            //       showDialog(
-            //           context: context,
-            //           builder: (BuildContext context) {
-            //             return Dialog(
-            //               shape: RoundedRectangleBorder(
-            //                   borderRadius: BorderRadius.circular(10.0)),
-            //               child: Container(
-            //                 padding: EdgeInsets.symmetric(
-            //                     vertical: 20, horizontal: 0),
-            //                 height: 250,
-            //                 child: Column(
-            //                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //                   children: [
-            //                     Image.asset('assets/images/alert.png',
-            //                         height: 100),
-            //                     SizedBox(height: 10),
-            //                     Text(
-            //                       "Apakah kamu yakin ingin menghapus Pengumuman?",
-            //                       textAlign: TextAlign.center,
-            //                       style: TextStyle(fontSize: 16, height: 1.3),
-            //                     ),
-            //                     SizedBox(height: 10),
-            //                     Container(
-            //                       child: Row(
-            //                           mainAxisAlignment:
-            //                               MainAxisAlignment.center,
-            //                           children: [
-            //                             Container(
-            //                               width: 80,
-            //                               alignment: Alignment.center,
-            //                               padding: EdgeInsets.symmetric(
-            //                                   // horizontal: 35,
-            //                                   vertical: 8),
-            //                               decoration: BoxDecoration(
-            //                                   borderRadius:
-            //                                       BorderRadius.circular(5),
-            //                                   color: Colors.grey[300]),
-            //                               child: Text("Tidak"),
-            //                             ),
-            //                             SizedBox(width: 10),
-            //                             Container(
-            //                               alignment: Alignment.center,
-            //                               width: 80,
-            //                               padding: EdgeInsets.symmetric(
-            //                                   // horizontal: 30,
-            //                                   vertical: 8),
-            //                               decoration: BoxDecoration(
-            //                                   borderRadius:
-            //                                       BorderRadius.circular(5),
-            //                                   color: Colors.redAccent),
-            //                               child: Text(
-            //                                 "Ya",
-            //                                 style:
-            //                                     TextStyle(color: Colors.white),
-            //                               ),
-            //                             )
-            //                           ]),
-            //                     )
-            //                   ],
-            //                 ),
-            //               ),
-            //             );
-            //           });
-            //     }
-            //   },
-            // )
           ]),
         )
       ],

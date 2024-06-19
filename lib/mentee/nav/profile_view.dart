@@ -13,11 +13,8 @@ class ProfileView extends StatefulWidget {
 
 class _ProfileViewState extends State<ProfileView> {
   final ImagePicker _picker = ImagePicker();
-
   XFile? _imageFile;
-  dynamic _pickImageError;
-
-  var _isSubmitted = false;
+  var _tab = 0;
 
   @override
   Widget build(BuildContext context) {

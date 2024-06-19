@@ -32,7 +32,7 @@ class TugasListState extends State<TugasList> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Tugas 1",
+                            Text("Tugas 6",
                                 style: TextStyle(
                                     fontSize: 16,
                                     height: 1.4,
@@ -42,7 +42,7 @@ class TugasListState extends State<TugasList> {
                               padding: EdgeInsets.only(
                                   left: 15, right: 15, top: 15, bottom: 15),
                               decoration: BoxDecoration(
-                                color: Colors.blue[50],
+                                color: Color.fromARGB(255, 28, 104, 158),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Row(
@@ -50,212 +50,20 @@ class TugasListState extends State<TugasList> {
                                   children: [
                                     Image.asset(
                                       'assets/images/upload.png',
-                                      height: 30,
+                                      height: 20,
                                     ),
-                                    SizedBox(width: 8),
+                                    SizedBox(width: 8, height: 40),
                                     Expanded(
                                         child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Text("Pemahaman Dasar UI/UX Design",
+                                        Text("Membangun Aplikasi Blog Sederhana",
                                             style: TextStyle(
                                                 fontSize: 14,
                                                 height: 1.4,
-                                                color: Colors.blue,
-                                                decoration:
-                                                    TextDecoration.underline,
+                                                color: Colors.white,
                                                 fontWeight: FontWeight.bold)),
-                                        SizedBox(height: 10),
-                                        Text(
-                                            "Lorem ipsum dolor siamet, lorem ipsum dolor siamet, lorem ipsum dolor siamet ,lorem ipsum dolor siamet, lorem ipsum dolor siamet",
-                                            style: TextStyle(
-                                                fontSize: 12,
-                                                height: 1.4,
-                                                fontWeight: FontWeight.normal)),
-                                      ],
-                                    ))
-                                  ]),
-                            )
-                          ],
-                        ),
-                      )),
-                  SizedBox(height: 20),
-                  GestureDetector(
-                      onTap: () {
-                        if (!_clickedDetails) {
-                          setState(() {
-                            _clickedDetails = true;
-                          });
-                        }
-                      },
-                      child: Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Tugas 2",
-                                style: TextStyle(
-                                    fontSize: 16,
-                                    height: 1.4,
-                                    fontWeight: FontWeight.bold)),
-                            SizedBox(height: 20),
-                            Container(
-                              padding: EdgeInsets.only(
-                                  left: 15, right: 15, top: 15, bottom: 15),
-                              decoration: BoxDecoration(
-                                color: Colors.blue[50],
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/upload.png',
-                                      height: 30,
-                                    ),
-                                    SizedBox(width: 8),
-                                    Expanded(
-                                        child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text("Pemahaman Dasar UI/UX Design",
-                                            style: TextStyle(
-                                                fontSize: 14,
-                                                height: 1.4,
-                                                color: Colors.blue,
-                                                decoration:
-                                                    TextDecoration.underline,
-                                                fontWeight: FontWeight.bold)),
-                                        SizedBox(height: 10),
-                                        Text(
-                                            "Lorem ipsum dolor siamet, lorem ipsum dolor siamet, lorem ipsum dolor siamet ,lorem ipsum dolor siamet, lorem ipsum dolor siamet",
-                                            style: TextStyle(
-                                                fontSize: 12,
-                                                height: 1.4,
-                                                fontWeight: FontWeight.normal)),
-                                      ],
-                                    ))
-                                  ]),
-                            )
-                          ],
-                        ),
-                      )),
-                  SizedBox(height: 20),
-                  GestureDetector(
-                      onTap: () {
-                        if (!_clickedDetails) {
-                          setState(() {
-                            _clickedDetails = true;
-                          });
-                        }
-                      },
-                      child: Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Tugas 3",
-                                style: TextStyle(
-                                    fontSize: 16,
-                                    height: 1.4,
-                                    fontWeight: FontWeight.bold)),
-                            SizedBox(height: 20),
-                            Container(
-                              padding: EdgeInsets.only(
-                                  left: 15, right: 15, top: 15, bottom: 15),
-                              decoration: BoxDecoration(
-                                color: Colors.blue[50],
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/upload.png',
-                                      height: 30,
-                                    ),
-                                    SizedBox(width: 8),
-                                    Expanded(
-                                        child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text("Pemahaman Dasar UI/UX Design",
-                                            style: TextStyle(
-                                                fontSize: 14,
-                                                height: 1.4,
-                                                color: Colors.blue,
-                                                decoration:
-                                                    TextDecoration.underline,
-                                                fontWeight: FontWeight.bold)),
-                                        SizedBox(height: 10),
-                                        Text(
-                                            "Lorem ipsum dolor siamet, lorem ipsum dolor siamet, lorem ipsum dolor siamet ,lorem ipsum dolor siamet, lorem ipsum dolor siamet",
-                                            style: TextStyle(
-                                                fontSize: 12,
-                                                height: 1.4,
-                                                fontWeight: FontWeight.normal)),
-                                      ],
-                                    ))
-                                  ]),
-                            )
-                          ],
-                        ),
-                      )),
-                  SizedBox(height: 20),
-                  GestureDetector(
-                      onTap: () {
-                        if (!_clickedDetails) {
-                          setState(() {
-                            _clickedDetails = true;
-                          });
-                        }
-                      },
-                      child: Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Tugas 4",
-                                style: TextStyle(
-                                    fontSize: 16,
-                                    height: 1.4,
-                                    fontWeight: FontWeight.bold)),
-                            SizedBox(height: 20),
-                            Container(
-                              padding: EdgeInsets.only(
-                                  left: 15, right: 15, top: 15, bottom: 15),
-                              decoration: BoxDecoration(
-                                color: Colors.blue[50],
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/upload.png',
-                                      height: 30,
-                                    ),
-                                    SizedBox(width: 8),
-                                    Expanded(
-                                        child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text("Pemahaman Dasar UI/UX Design",
-                                            style: TextStyle(
-                                                fontSize: 14,
-                                                height: 1.4,
-                                                color: Colors.blue,
-                                                decoration:
-                                                    TextDecoration.underline,
-                                                fontWeight: FontWeight.bold)),
-                                        SizedBox(height: 10),
-                                        Text(
-                                            "Lorem ipsum dolor siamet, lorem ipsum dolor siamet, lorem ipsum dolor siamet ,lorem ipsum dolor siamet, lorem ipsum dolor siamet",
-                                            style: TextStyle(
-                                                fontSize: 12,
-                                                height: 1.4,
-                                                fontWeight: FontWeight.normal)),
                                       ],
                                     ))
                                   ]),
@@ -286,7 +94,7 @@ class TugasListState extends State<TugasList> {
                               padding: EdgeInsets.only(
                                   left: 15, right: 15, top: 15, bottom: 15),
                               decoration: BoxDecoration(
-                                color: Colors.blue[50],
+                                color: Color.fromARGB(255, 28, 104, 158),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Row(
@@ -294,29 +102,228 @@ class TugasListState extends State<TugasList> {
                                   children: [
                                     Image.asset(
                                       'assets/images/upload.png',
-                                      height: 30,
+                                      height: 20,
                                     ),
-                                    SizedBox(width: 8),
+                                    SizedBox(width: 8, height: 40),
                                     Expanded(
                                         child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Text("Pemahaman Dasar UI/UX Design",
+                                        Text("Mendesain Halaman Web Responsive",
                                             style: TextStyle(
                                                 fontSize: 14,
                                                 height: 1.4,
-                                                color: Colors.blue,
-                                                decoration:
-                                                    TextDecoration.underline,
+                                                color: Colors.white,
                                                 fontWeight: FontWeight.bold)),
-                                        SizedBox(height: 10),
-                                        Text(
-                                            "Lorem ipsum dolor siamet, lorem ipsum dolor siamet, lorem ipsum dolor siamet ,lorem ipsum dolor siamet, lorem ipsum dolor siamet",
+                                      ],
+                                    ))
+                                  ]),
+                            )
+                          ],
+                        ),
+                      )),
+                  SizedBox(height: 20),
+                  GestureDetector(
+                      onTap: () {
+                        if (!_clickedDetails) {
+                          setState(() {
+                            _clickedDetails = true;
+                          });
+                        }
+                      },
+                      child: Container(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Tugas 4",
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    height: 1.4,
+                                    fontWeight: FontWeight.bold)),
+                            SizedBox(height: 20),
+                            Container(
+                              padding: EdgeInsets.only(
+                                  left: 15, right: 15, top: 15, bottom: 15),
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 28, 104, 158),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/upload.png',
+                                      height: 20,
+                                    ),
+                                    SizedBox(width: 8, height: 40),
+                                    Expanded(
+                                        child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Kolaborasi Proyek di Github",
                                             style: TextStyle(
-                                                fontSize: 12,
+                                                fontSize: 14,
                                                 height: 1.4,
-                                                fontWeight: FontWeight.normal)),
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold)),
+                                      ],
+                                    ))
+                                  ]),
+                            )
+                          ],
+                        ),
+                      )),
+                  SizedBox(height: 20),
+                  GestureDetector(
+                      onTap: () {
+                        if (!_clickedDetails) {
+                          setState(() {
+                            _clickedDetails = true;
+                          });
+                        }
+                      },
+                      child: Container(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Tugas 3",
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    height: 1.4,
+                                    fontWeight: FontWeight.bold)),
+                            SizedBox(height: 20),
+                            Container(
+                              padding: EdgeInsets.only(
+                                  left: 15, right: 15, top: 15, bottom: 15),
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 28, 104, 158),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/upload.png',
+                                      height: 20,
+                                    ),
+                                    SizedBox(width: 8, height: 40),
+                                    Expanded(
+                                        child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Membuat Aplikasi To-Do List Sederhana",
+                                            style: TextStyle(
+                                                fontSize: 14,
+                                                height: 1.4,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold)),
+                                      ],
+                                    ))
+                                  ]),
+                            )
+                          ],
+                        ),
+                      )),
+                      SizedBox(height: 20),
+                  GestureDetector(
+                      onTap: () {
+                        if (!_clickedDetails) {
+                          setState(() {
+                            _clickedDetails = true;
+                          });
+                        }
+                      },
+                      child: Container(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Tugas 2",
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    height: 1.4,
+                                    fontWeight: FontWeight.bold)),
+                            SizedBox(height: 20),
+                            Container(
+                              padding: EdgeInsets.only(
+                                  left: 15, right: 15, top: 15, bottom: 15),
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 28, 104, 158),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/upload.png',
+                                      height: 20,
+                                    ),
+                                    SizedBox(width: 8, height: 40),
+                                    Expanded(
+                                        child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Membangun Halaman Profil Personal menggunakan CSS",
+                                            style: TextStyle(
+                                                fontSize: 14,
+                                                height: 1.4,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold)),
+                                      ],
+                                    ))
+                                  ]),
+                            )
+                          ],
+                        ),
+                      )),
+                  SizedBox(height: 20),
+                  GestureDetector(
+                      onTap: () {
+                        if (!_clickedDetails) {
+                          setState(() {
+                            _clickedDetails = true;
+                          });
+                        }
+                      },
+                      child: Container(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Tugas 1",
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    height: 1.4,
+                                    fontWeight: FontWeight.bold)),
+                            SizedBox(height: 20),
+                            Container(
+                              padding: EdgeInsets.only(
+                                  left: 15, right: 15, top: 15, bottom: 15),
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 28, 104, 158),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/upload.png',
+                                      height: 20,
+                                    ),
+                                    SizedBox(width: 8, height: 40),
+                                    Expanded(
+                                        child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Pengenalan Dasar HTML",
+                                            style: TextStyle(
+                                                fontSize: 14,
+                                                height: 1.4,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold)),
                                       ],
                                     ))
                                   ]),
@@ -345,16 +352,13 @@ class TugasListState extends State<TugasList> {
                     }
                   },
                   icon: Icon(Icons.arrow_back_ios)),
-              Text("Tugas 1",
-                  style: TextStyle(
-                      fontSize: 16, height: 1.4, fontWeight: FontWeight.bold))
             ],
           ),
           SizedBox(height: 20),
           Container(
             padding: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
             decoration: BoxDecoration(
-              color: Colors.blue[50],
+              color: Color.fromARGB(255, 28, 104, 158),
               borderRadius: BorderRadius.circular(20),
             ),
             child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -367,11 +371,11 @@ class TugasListState extends State<TugasList> {
                   child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Pemahaman Dasar UI/UX Design",
+                  Text("Membangun Aplikasi Blog Sederhana",
                       style: TextStyle(
                           fontSize: 14,
                           height: 1.4,
-                          color: Colors.blue,
+                          color: Colors.white,
                           decoration: TextDecoration.underline,
                           fontWeight: FontWeight.bold)),
                   SizedBox(height: 10),
@@ -379,6 +383,7 @@ class TugasListState extends State<TugasList> {
                       style: TextStyle(
                           fontSize: 12,
                           height: 1.4,
+                          color: Colors.white,
                           fontWeight: FontWeight.normal)),
                 ],
               ))
@@ -389,7 +394,7 @@ class TugasListState extends State<TugasList> {
               padding:
                   EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
               decoration: BoxDecoration(
-                color: Colors.blue[50],
+                color: Color.fromARGB(255, 28, 104, 158),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Column(

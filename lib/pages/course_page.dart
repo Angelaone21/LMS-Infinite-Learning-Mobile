@@ -185,6 +185,7 @@ class _CoursePageState extends State<CoursePage> {
                       Image.asset(
                         'assets/images/Open_Book.png',
                         height: 30,
+                        color: Colors.white,
                       ),
                       SizedBox(width: 8),
                       Expanded(
@@ -235,6 +236,7 @@ class _CoursePageState extends State<CoursePage> {
                       Image.asset(
                         'assets/images/Open_Book.png',
                         height: 30,
+                        color: Colors.white,
                       ),
                       SizedBox(width: 8),
                       Expanded(
@@ -250,7 +252,7 @@ class _CoursePageState extends State<CoursePage> {
                                   fontWeight: FontWeight.bold)),
                           SizedBox(height: 10),
                           Text(
-                              "Pengenalan Dasar Web adalah pemahaman awal tentang bagaimana internet dan web berfungsi, termasuk konsep server dan klien, protokol HTTP/HTTPS, DNS, serta komponen utama halaman web seperti HTML, CSS, dan JavaScript.",
+                              "HTML adalah bahasa standar yang digunakan untuk membuat dan menyusun halaman web. HTML menggunakan elemen-elemen atau tag untuk mendefinisikan berbagai bagian dari sebuah halaman web, seperti judul, paragraf, tautan, gambar, dan banyak lagi. Setiap elemen HTML ditulis dalam bentuk tag yang diapit oleh tanda kurung sudut, seperti <html>, <head>, <body>, dan lain-lain. ",
                               style: TextStyle(
                                   fontSize: 12,
                                   height: 1.4,
@@ -285,6 +287,7 @@ class _CoursePageState extends State<CoursePage> {
                       Image.asset(
                         'assets/images/Open_Book.png',
                         height: 30,
+                        color: Colors.white,
                       ),
                       SizedBox(width: 8),
                       Expanded(
@@ -335,6 +338,7 @@ class _CoursePageState extends State<CoursePage> {
                       Image.asset(
                         'assets/images/Open_Book.png',
                         height: 30,
+                        color: Colors.white,
                       ),
                       SizedBox(width: 8),
                       Expanded(
@@ -385,6 +389,7 @@ class _CoursePageState extends State<CoursePage> {
                       Image.asset(
                         'assets/images/Open_Book.png',
                         height: 30,
+                        color: Colors.white,
                       ),
                       SizedBox(width: 8),
                       Expanded(
@@ -435,6 +440,7 @@ class _CoursePageState extends State<CoursePage> {
                       Image.asset(
                         'assets/images/Open_Book.png',
                         height: 30,
+                        color: Colors.white,
                       ),
                       SizedBox(width: 8),
                       Expanded(
@@ -485,6 +491,7 @@ class _CoursePageState extends State<CoursePage> {
                       Image.asset(
                         'assets/images/Open_Book.png',
                         height: 30,
+                        color: Colors.white,
                       ),
                       SizedBox(width: 8),
                       Expanded(
@@ -563,7 +570,8 @@ class _CoursePageState extends State<CoursePage> {
                     children: [
                       Image.asset(
                         'assets/images/task.png',
-                        height: 25,
+                        height: 20,
+                        color: Colors.white,
                       ),
                       Expanded(
                           child: Column(
@@ -712,7 +720,8 @@ class _CoursePageState extends State<CoursePage> {
                     children: [
                       Image.asset(
                         'assets/images/task.png',
-                        height: 25,
+                        height: 20,
+                        color: Colors.white,
                       ),
                       Expanded(
                           child: Column(
@@ -861,7 +870,8 @@ class _CoursePageState extends State<CoursePage> {
                     children: [
                       Image.asset(
                         'assets/images/task.png',
-                        height: 30,
+                        color: Colors.white,
+                        height: 20,
                       ),
                       Expanded(
                           child: Column(
@@ -1010,7 +1020,8 @@ class _CoursePageState extends State<CoursePage> {
                     children: [
                       Image.asset(
                         'assets/images/task.png',
-                        height: 25,
+                        height: 20,
+                        color: Colors.white,
                       ),
                       Expanded(
                           child: Column(
@@ -1159,7 +1170,8 @@ class _CoursePageState extends State<CoursePage> {
                     children: [
                       Image.asset(
                         'assets/images/task.png',
-                        height: 25,
+                        height: 20,
+                        color: Colors.white,
                       ),
                       Expanded(
                           child: Column(
@@ -1308,7 +1320,8 @@ class _CoursePageState extends State<CoursePage> {
                     children: [
                       Image.asset(
                         'assets/images/task.png',
-                        height: 25,
+                        height: 20,
+                        color: Colors.white,
                       ),
                       Expanded(
                           child: Column(
@@ -1459,6 +1472,7 @@ class _CoursePageState extends State<CoursePage> {
                         Image.asset(
                           'assets/images/link.png',
                           height: 20,
+                          color: Colors.white,
                         ),
                         SizedBox(width: 8),
                         Text("Link Zoom",
@@ -1508,6 +1522,7 @@ class _CoursePageState extends State<CoursePage> {
                         Image.asset(
                           'assets/images/link.png',
                           height: 20,
+                          color: Colors.white,
                         ),
                         SizedBox(width: 8),
                         Text("Link Zoom",
@@ -1557,6 +1572,7 @@ class _CoursePageState extends State<CoursePage> {
                         Image.asset(
                           'assets/images/link.png',
                           height: 20,
+                          color: Colors.white,
                         ),
                         SizedBox(width: 8),
                         Text("Link Zoom",
@@ -1630,7 +1646,7 @@ class _CoursePageState extends State<CoursePage> {
                 child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset('assets/images/profile.png', height: 34),
+                      Image.asset('assets/images/profile.png', height: 34, ),
                       SizedBox(width: 10),
                       Expanded(
                           child: Column(
@@ -1639,17 +1655,16 @@ class _CoursePageState extends State<CoursePage> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Jessica",
+                              Text("Jessica Aulia",
                                   style: TextStyle(
                                       fontSize: 14,
                                       height: 1.4,
                                       color: Color.fromARGB(255, 245, 239, 239),
-                                      // decoration: TextDecoration.underline,
                                       fontWeight: FontWeight.bold)),
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.watch_later_outlined, size: 16),
+                                  Icon(Icons.watch_later_outlined, size: 16, color: Colors.white,),
                                   SizedBox(width: 2),
                                   Text("22 Dec 2023",
                                       style: TextStyle(
@@ -1664,7 +1679,7 @@ class _CoursePageState extends State<CoursePage> {
                           ),
                           SizedBox(height: 10),
                           Text(
-                              "Halo semua, Akhirnya kita sudah sampai di ujung kegiatan kita. Selamat berjumap di kesempatan lainnya. Senang bisa mengenal kalian semua",
+                              "Halo semua, Akhirnya kita sudah sampai di ujung kegiatan kita. Selamat berjumap di kesempatan lainnya. Senang bisa mengenal kalian semua. ",
                               style: TextStyle(
                                   fontSize: 12,
                                   height: 1.4,
@@ -1803,7 +1818,7 @@ class _CoursePageState extends State<CoursePage> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16),
+                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white,),
                         SizedBox(width: 2),
                         Text("25 Nov 2023",
                             style: TextStyle(
@@ -1818,7 +1833,7 @@ class _CoursePageState extends State<CoursePage> {
                 ),
                 SizedBox(height: 10),
                 Text(
-                    "Halo semua nggak kerasa kita udah deket akhir kegiatan Studi Independen, tetep semangat ngerjain proyek dan jaga kesehatan ya",
+                    "Halo semua nggak kerasa kita udah deket akhir kegiatan Studi Independen, tetep semangat ngerjain proyek dan jaga kesehatan ya. ",
                     style: TextStyle(
                         fontSize: 12,
                         height: 1.4,
@@ -1945,7 +1960,7 @@ class _CoursePageState extends State<CoursePage> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16),
+                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white,),
                         SizedBox(width: 2),
                         Text("12 Okt 2023",
                             style: TextStyle(
@@ -2087,7 +2102,7 @@ class _CoursePageState extends State<CoursePage> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16),
+                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white,),
                         SizedBox(width: 2),
                         Text("20  Sept 2023",
                             style: TextStyle(
@@ -2229,7 +2244,7 @@ class _CoursePageState extends State<CoursePage> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16),
+                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
                         SizedBox(width: 2),
                         Text("18 Augt 2023",
                             style: TextStyle(
@@ -2244,7 +2259,7 @@ class _CoursePageState extends State<CoursePage> {
                 ),
                 SizedBox(height: 10),
                 Text(
-                    "Hai Guys, siapa yang udah ga sabar our first class tomorrow??\nSampai jumapa besok ya temen - temen jangan begadang dan jaga stay healthy",
+                    "Hai Guys, siapa yang udah ga sabar our first class tomorrow??\nSampai jumpa besok ya temen - temen jangan begadang dan jaga stay healthy",
                     style: TextStyle(
                         fontSize: 12,
                         height: 1.4,
@@ -2371,7 +2386,7 @@ class _CoursePageState extends State<CoursePage> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16),
+                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
                         SizedBox(width: 2),
                         Text("14 Agustus 2023",
                             style: TextStyle(
