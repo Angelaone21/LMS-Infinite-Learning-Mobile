@@ -10,6 +10,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  // ini merupakan LoginPageState
   var _emailController = TextEditingController();
   var _passController = TextEditingController();
 
