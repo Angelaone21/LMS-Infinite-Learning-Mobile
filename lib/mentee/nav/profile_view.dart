@@ -13,6 +13,7 @@ class ProfileView extends StatefulWidget {
 
 class _ProfileViewState extends State<ProfileView> {
   final ImagePicker _picker = ImagePicker();
+
   XFile? _imageFile;
   var _tab = 0;
 
@@ -196,7 +197,7 @@ class _ProfileViewState extends State<ProfileView> {
                       Expanded(
                         child: Container(
                           margin:
-                              EdgeInsets.only(left: 15, right: 15, bottom: 30),
+                              EdgeInsets.only(left: 20, right: 15, bottom: 30),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -233,9 +234,12 @@ class _ProfileViewState extends State<ProfileView> {
                     borderRadius: BorderRadius.circular(10),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.grey.withOpacity(0.3), //color of shadow
-                        spreadRadius: 1, //spread radius
-                        blurRadius: 2, // blur radius
+                        color: Colors.grey.withOpacity(0.3),
+                        //color of shadow
+                        spreadRadius: 1,
+                        //spread radius
+                        blurRadius: 2,
+                        // blur radius
                         offset: Offset(0, 2), // changes position of shadow
                         //first paramerter of offset is left-right
                         //second parameter is top to down
@@ -573,16 +577,6 @@ class _ProfileViewState extends State<ProfileView> {
   }
 
   Future<void> onImageButtonPressed(ImageSource source) async {
-    // if (_controller != null) {
-    //   await _controller.setVolume(0.0);
-    // }
-    // if (isVideo) {
-    //   final PickedFile file = await _picker.getVideo(
-    //       source: source, maxDuration: const Duration(seconds: 10));
-    //   await _playVideo(file);
-    // } else {
-    // await _displayPickImageDialog(context,
-    //     (double maxWidth, double maxHeight, int quality) async {
     Navigator.of(context).pop();
 
     try {
@@ -595,35 +589,7 @@ class _ProfileViewState extends State<ProfileView> {
       setState(() {
         _imageFile = pickedFile!;
       });
-      //
-      // late FormData formData;
-      // late dynamic response;
-      //
-      if (pickedFile != null) {
-        // _timer?.cancel();
-        // await EasyLoading.show(maskType: EasyLoadingMaskType.custom);
-
-        // formData = FormData.fromMap({
-        //   'name': model.user.name,
-        //   'email': model.user.email,
-        //   'image': await MultipartFile.fromFile(_imageFile.path,
-        //       filename: _imageFile.path.split('/').last)
-        // });
-
-        // response = await model.editProfile(formData);
-
-        // if (response['data'] != null) {
-        //   _timer?.cancel();
-        //   await EasyLoading.dismiss();
-        // }
-      }
-    } catch (e) {
-      // _timer?.cancel();
-      // await EasyLoading.dismiss();
-      // setState(() {
-      //   _pickImageError = e;
-      // });
-    }
-    // });
+      if (pickedFile != null) {}
+    } catch (e) {}
   }
 }
