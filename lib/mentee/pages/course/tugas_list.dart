@@ -335,11 +335,10 @@ class TugasListState extends State<TugasList> {
               ));
   }
 
-  Widget _buildTugasDetail() {
+  Widget _buildTugasDetail() { //membuat tugas detail halaman mentee
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       child: ListView(
-        // crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
@@ -577,8 +576,6 @@ class TugasListState extends State<TugasList> {
                   ),
                   SizedBox(height: 30),
                   Container(
-                    // height: 30,
-                    // alignment: Alignment.center,
                     padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
                         color: Colors.grey[300],

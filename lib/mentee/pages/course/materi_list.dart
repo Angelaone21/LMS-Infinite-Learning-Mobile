@@ -2,16 +2,159 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 
-class MateriList extends StatelessWidget {
-  const MateriList({super.key});
+class MateriList extends StatefulWidget {
+  const MateriList({Key? key}) : super(key: key);
+
+  @override
+  _MateriListState createState() => _MateriListState();
+}
+
+class _MateriListState extends State<MateriList> {
+  var _clickedDetails = false;
+
+ Widget _buildMateriDetail(String title, String description) {
+    return Container(
+      padding: EdgeInsets.all(10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(height: 10), //mengatur ikon panah
+          Row(
+            children: [
+              IconButton(
+                color: Colors.black,
+                onPressed: () {
+                  setState(() {
+                    _clickedDetails = false;
+                  });
+                },
+                icon: Icon(Icons.arrow_back),
+              ),
+              SizedBox(height: 10),
+              Text(
+                title,
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+
+          SizedBox(height: 20), //mengatur gambar pada deatil course mentee
+          Container(
+            decoration: BoxDecoration(
+              color: Color.fromARGB(255, 28, 104, 158),
+              borderRadius: BorderRadius.circular(15),
+            ),
+              child: ClipRRect(
+              borderRadius: BorderRadius.circular(15), // Sama dengan borderRadius di atas
+              child: Image.asset(
+                'assets/images/play.jpg',
+                height: 80,
+                width: double.infinity,
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          
+          Divider(),
+          SizedBox(height: 8),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            decoration: BoxDecoration(
+              color: Color.fromARGB(255, 255, 254, 254),
+              borderRadius: BorderRadius.circular(10),
+            ),
+             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Penjelasan ',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 8),
+                Text(
+                  description,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          Divider(), //mengatu ukuran kolom pdf deatil course mentee
+          SizedBox(height: 10),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+            decoration: BoxDecoration(
+              color: Color.fromARGB(255, 53, 120, 168),
+              borderRadius: BorderRadius.circular(10),
+              boxShadow: [
+                BoxShadow(
+                  color: Color.fromARGB(255, 28, 104, 158),
+                  blurRadius: 5.0,
+                ),
+              ],
+            ),
+            child: 
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Pengenalan Dasar Web.pdf",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                  ),
+                ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.copy,
+                      color: Colors.white,
+                      size: 20,
+                    ),
+                    SizedBox(width: 10),
+                    Icon(
+                      Icons.download,
+                      color: Colors.white,
+                      size: 20,
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
-        child: ListView(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        child: _clickedDetails
+        ? _buildMateriDetail(
+          "Pengenalan Dasar Web", 
+          "Pengenalan dasar web adalah pemahaman awal tentang bagaimana internet dan web berfungsi"
+          "termasuk konsep server dan klien, protokol HTTP/HTTP, DNS, serta komponen utama haalaman web"
+          "seperti HTML, CSS, dan JavaScript")
+        : ListView(
+      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
       children: [
-        Container(
+        GestureDetector(
+          onTap: () {
+            setState(() {
+              _clickedDetails = true;
+            });
+          },
+        child: Container(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -34,7 +177,7 @@ class MateriList extends StatelessWidget {
                         height: 30,
                         color: Colors.white
                       ),
-                      SizedBox(width: 8),
+                      SizedBox(height: 20),
                       Expanded(
                           child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,7 +201,7 @@ class MateriList extends StatelessWidget {
                       ))
                     ]),
               )
-            ],
+            ]),
           ),
         ),
         SizedBox(height: 20),
@@ -68,7 +211,9 @@ class MateriList extends StatelessWidget {
             children: [
               Text("Pertemuan 2",
                   style: TextStyle(
-                      fontSize: 16, height: 1.4, fontWeight: FontWeight.bold)),
+                      fontSize: 16, height: 1.4, fontWeight: FontWeight.bold)
+                      ),
+              
               SizedBox(height: 20),
               Container(
                 padding:
@@ -110,46 +255,6 @@ class MateriList extends StatelessWidget {
                             ],
                           ))
                         ]),
-                    Divider(),
-                    SizedBox(height: 10),
-                    Container(
-                      child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Container(
-                                margin: EdgeInsets.symmetric(horizontal: 10),
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 40, vertical: 25),
-                                decoration: BoxDecoration(
-                                    color: Colors.grey[200],
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey,
-                                        blurRadius: 5.0,
-                                      ),
-                                    ]),
-                                child: Text(
-                                  ".pdf",
-                                )),
-                            Row(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Icon(
-                                  Icons.copy,
-                                  color: Colors.grey[400],
-                                  size: 20,
-                                ),
-                                SizedBox(width: 10),
-                                Icon(
-                                  Icons.download,
-                                  color: Colors.grey[400],
-                                  size: 20,
-                                ),
-                              ],
-                            )
-                          ]),
-                    ),
                   ],
                 ),
               )
@@ -256,46 +361,6 @@ class MateriList extends StatelessWidget {
                             ],
                           ))
                         ]),
-                    Divider(),
-                    SizedBox(height: 10),
-                    Container(
-                      child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Container(
-                                margin: EdgeInsets.symmetric(horizontal: 10),
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 40, vertical: 25),
-                                decoration: BoxDecoration(
-                                    color: Colors.grey[200],
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey,
-                                        blurRadius: 5.0,
-                                      ),
-                                    ]),
-                                child: Text(
-                                  ".pdf",
-                                )),
-                            Row(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Icon(
-                                  Icons.copy,
-                                  color: Colors.grey[400],
-                                  size: 20,
-                                ),
-                                SizedBox(width: 10),
-                                Icon(
-                                  Icons.download,
-                                  color: Colors.grey[400],
-                                  size: 20,
-                                ),
-                              ],
-                            )
-                          ]),
-                    ),
                   ],
                 ),
               )
@@ -453,46 +518,6 @@ class MateriList extends StatelessWidget {
                             ],
                           ))
                         ]),
-                    Divider(),
-                    SizedBox(height: 10),
-                    Container(
-                      child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Container(
-                                margin: EdgeInsets.symmetric(horizontal: 10),
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 40, vertical: 25),
-                                decoration: BoxDecoration(
-                                    color: Colors.grey[200],
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.grey,
-                                        blurRadius: 5.0,
-                                      ),
-                                    ]),
-                                child: Text(
-                                  ".pdf",
-                                )),
-                            Row(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Icon(
-                                  Icons.copy,
-                                  color: Colors.grey[400],
-                                  size: 20,
-                                ),
-                                SizedBox(width: 10),
-                                Icon(
-                                  Icons.download,
-                                  color: Colors.grey[400],
-                                  size: 20,
-                                ),
-                              ],
-                            )
-                          ]),
-                    ),
                   ],
                 ),
               )
