@@ -18,14 +18,12 @@ class _CoursePageState extends State<CoursePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: PreferredSize(
-            preferredSize: Size.fromHeight(80.0), // here the desired height
+            preferredSize: Size.fromHeight(80.0), 
             child: SafeArea(
               child: Container(
                   alignment: Alignment.centerLeft,
                   margin: EdgeInsets.symmetric(horizontal: 15),
-                  // alignment: Alignment.center,
                   height: 80,
-                  // color: Colors.red,
                   child: IconButton(
                       onPressed: () {
                         Navigator.of(context).pop();
@@ -47,7 +45,6 @@ class _CoursePageState extends State<CoursePage> {
                   height: 45,
                   margin: EdgeInsets.only(top: 10, bottom: 10, left: 15),
                   child: ListView(
-                      // padding: EdgeInsets.symmetric(vertical: 10),
                       scrollDirection: Axis.horizontal,
                       children: [
                         GestureDetector(
