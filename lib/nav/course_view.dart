@@ -36,8 +36,8 @@ class _CourseViewState extends State<CourseView> {
                       hintText: "Search...",
                       alignLabelWithHint: true,
                       suffixIcon: Icon(Icons.search),
-                      contentPadding: EdgeInsets.symmetric(
-                          vertical: 5, horizontal: 20),
+                      contentPadding:
+                          EdgeInsets.symmetric(vertical: 5, horizontal: 20),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide(color: Colors.black45, width: 2),
@@ -108,14 +108,16 @@ class _CourseViewState extends State<CourseView> {
     );
   }
 
-  Widget _buildCourseCard(BuildContext context, String imagePath, String title, String description, Widget nextPage) {
+  Widget _buildCourseCard(BuildContext context, String imagePath, String title,
+      String description, Widget nextPage) {
     bool isExpanded = false;
 
     return StatefulBuilder(
       builder: (BuildContext context, StateSetter setState) {
         return GestureDetector(
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => nextPage));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (BuildContext context) => nextPage));
           },
           child: Container(
             padding: EdgeInsets.all(15),
@@ -138,12 +140,16 @@ class _CourseViewState extends State<CourseView> {
                 SizedBox(height: 10),
                 Text(
                   title,
-                  style: TextStyle(fontSize: 16, height: 1.4, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 16, height: 1.4, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: 5),
                 Text(
-                  isExpanded ? description : '${description.substring(0, 100)}...',
-                  style: TextStyle(fontSize: 12, height: 1.4, fontWeight: FontWeight.normal),
+                  isExpanded
+                      ? description
+                      : '${description.substring(0, 100)}...',
+                  style: TextStyle(
+                      fontSize: 12, height: 1.4, fontWeight: FontWeight.normal),
                 ),
                 SizedBox(height: 5),
                 GestureDetector(
@@ -154,7 +160,8 @@ class _CourseViewState extends State<CourseView> {
                   },
                   child: Text(
                     isExpanded ? 'Lihat Lebih Sedikit' : 'Lihat Selengkapnya',
-                    style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        color: Colors.blue, fontWeight: FontWeight.bold),
                   ),
                 ),
               ],

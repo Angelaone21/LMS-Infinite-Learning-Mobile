@@ -172,8 +172,7 @@ class _PengumumanPageState extends State<PengumumanPage> {
                           ]),
                         ),
                         SizedBox(height: 10),
-                        Text(
-                            "Hallo inner, are you ready for Halloween?",
+                        Text("Hallo inner, are you ready for Halloween?",
                             style: TextStyle(
                                 fontSize: 12,
                                 height: 1.4,
@@ -312,8 +311,7 @@ class _PengumumanPageState extends State<PengumumanPage> {
                           ]),
                         ),
                         SizedBox(height: 10),
-                        Text(
-                            "Wellcome to Infinite Learning!!",
+                        Text("Wellcome to Infinite Learning!!",
                             style: TextStyle(
                                 fontSize: 12,
                                 height: 1.4,

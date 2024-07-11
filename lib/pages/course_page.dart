@@ -1110,7 +1110,7 @@ class _CoursePageState extends State<CoursePage> {
                                                     alignment: Alignment.center,
                                                     width: 80,
                                                     padding:
-                                         EdgeInsets.symmetric(
+                                                        EdgeInsets.symmetric(
                                                             // horizontal: 30,
                                                             vertical: 8),
                                                     decoration: BoxDecoration(
@@ -1177,7 +1177,8 @@ class _CoursePageState extends State<CoursePage> {
                           child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Membangun Halaman Profil Personal menggunakan CSS",
+                          Text(
+                              "Membangun Halaman Profil Personal menggunakan CSS",
                               style: TextStyle(
                                   fontSize: 14,
                                   height: 1.4,
@@ -1646,7 +1647,10 @@ class _CoursePageState extends State<CoursePage> {
                 child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset('assets/images/profile.png', height: 34, ),
+                      Image.asset(
+                        'assets/images/profile.png',
+                        height: 34,
+                      ),
                       SizedBox(width: 10),
                       Expanded(
                           child: Column(
@@ -1664,13 +1668,18 @@ class _CoursePageState extends State<CoursePage> {
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.watch_later_outlined, size: 16, color: Colors.white,),
+                                  Icon(
+                                    Icons.watch_later_outlined,
+                                    size: 16,
+                                    color: Colors.white,
+                                  ),
                                   SizedBox(width: 2),
                                   Text("22 Dec 2023",
                                       style: TextStyle(
                                           fontSize: 11,
                                           height: 1.4,
-                                          color: Color.fromARGB(255, 245, 239, 239),
+                                          color: Color.fromARGB(
+                                              255, 245, 239, 239),
                                           // decoration: TextDecoration.underline,
                                           fontWeight: FontWeight.normal)),
                                 ],
@@ -1683,7 +1692,7 @@ class _CoursePageState extends State<CoursePage> {
                               style: TextStyle(
                                   fontSize: 12,
                                   height: 1.4,
-                                   color: Color.fromARGB(255, 245, 239, 239),
+                                  color: Color.fromARGB(255, 245, 239, 239),
                                   fontWeight: FontWeight.normal)),
                         ],
                       )),
@@ -1818,7 +1827,11 @@ class _CoursePageState extends State<CoursePage> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white,),
+                        Icon(
+                          Icons.watch_later_outlined,
+                          size: 16,
+                          color: Colors.white,
+                        ),
                         SizedBox(width: 2),
                         Text("25 Nov 2023",
                             style: TextStyle(
@@ -1960,7 +1973,11 @@ class _CoursePageState extends State<CoursePage> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white,),
+                        Icon(
+                          Icons.watch_later_outlined,
+                          size: 16,
+                          color: Colors.white,
+                        ),
                         SizedBox(width: 2),
                         Text("12 Okt 2023",
                             style: TextStyle(
@@ -2102,7 +2119,11 @@ class _CoursePageState extends State<CoursePage> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white,),
+                        Icon(
+                          Icons.watch_later_outlined,
+                          size: 16,
+                          color: Colors.white,
+                        ),
                         SizedBox(width: 2),
                         Text("20  Sept 2023",
                             style: TextStyle(
@@ -2244,7 +2265,8 @@ class _CoursePageState extends State<CoursePage> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
+                        Icon(Icons.watch_later_outlined,
+                            size: 16, color: Colors.white),
                         SizedBox(width: 2),
                         Text("18 Augt 2023",
                             style: TextStyle(
@@ -2386,7 +2408,8 @@ class _CoursePageState extends State<CoursePage> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
+                        Icon(Icons.watch_later_outlined,
+                            size: 16, color: Colors.white),
                         SizedBox(width: 2),
                         Text("14 Agustus 2023",
                             style: TextStyle(

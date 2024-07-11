@@ -58,7 +58,8 @@ class TugasListState extends State<TugasList> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Text("Membangun Aplikasi Blog Sederhana",
+                                        Text(
+                                            "Membangun Aplikasi Blog Sederhana",
                                             style: TextStyle(
                                                 fontSize: 14,
                                                 height: 1.4,
@@ -214,7 +215,8 @@ class TugasListState extends State<TugasList> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Text("Membuat Aplikasi To-Do List Sederhana",
+                                        Text(
+                                            "Membuat Aplikasi To-Do List Sederhana",
                                             style: TextStyle(
                                                 fontSize: 14,
                                                 height: 1.4,
@@ -227,7 +229,7 @@ class TugasListState extends State<TugasList> {
                           ],
                         ),
                       )),
-                      SizedBox(height: 20),
+                  SizedBox(height: 20),
                   GestureDetector(
                       onTap: () {
                         if (!_clickedDetails) {
@@ -266,7 +268,8 @@ class TugasListState extends State<TugasList> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Text("Membangun Halaman Profil Personal menggunakan CSS",
+                                        Text(
+                                            "Membangun Halaman Profil Personal menggunakan CSS",
                                             style: TextStyle(
                                                 fontSize: 14,
                                                 height: 1.4,

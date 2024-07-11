@@ -21,13 +21,6 @@ class _LoginPageState extends State<LoginPage> {
   final _globalKey = GlobalKey<ScaffoldMessengerState>();
 
   @override
-  void initState() {
-    super.initState();
-
-    _obscureText = true;
-  }
-
-  @override
   void dispose() {
     super.dispose();
     _emailController.dispose();
@@ -136,6 +129,13 @@ class _LoginPageState extends State<LoginPage> {
                 })
           ],
         ));
+  }
+
+  @override
+  void initState() {
+    super.initState();
+
+    _obscureText = true;
   }
 
   Widget _buildPasswordField() {

@@ -22,102 +22,96 @@ class _CourseViewState extends State<CourseView> {
           Container(
               height: 45,
               margin: EdgeInsets.only(top: 10, bottom: 10, left: 15),
-              child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    GestureDetector(
-                        onTap: () {
-                          if (_tab != 0) {
-                            setState(() {
-                              _tab = 0;
-                            });
-                          }
-                        },
-                        child: Container(
-                          alignment: Alignment.center,
-                          padding: EdgeInsets.all(12),
-                          margin: EdgeInsets.only(right: 15),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: _tab == 0 ? Colors.blue : Colors.white,
-                              border:
-                                  Border.all(color: Colors.blue, width: 1.5)),
-                          child: Text(
-                            "Materi",
-                            style: TextStyle(
-                                color: _tab == 0 ? Colors.white : Colors.blue),
-                          ),
-                        )),
-                    GestureDetector(
-                        onTap: () {
-                          if (_tab != 1) {
-                            setState(() {
-                              _tab = 1;
-                            });
-                          }
-                        },
-                        child: Container(
-                          alignment: Alignment.center,
-                          padding: EdgeInsets.all(12),
-                          margin: EdgeInsets.only(right: 15),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: _tab == 1 ? Colors.blue : Colors.white,
-                              border:
-                                  Border.all(color: Colors.blue, width: 1.5)),
-                          child: Text(
-                            "Tugas",
-                            style: TextStyle(
-                                color: _tab == 1 ? Colors.white : Colors.blue),
-                          ),
-                        )),
-                    GestureDetector(
-                        onTap: () {
-                          if (_tab != 2) {
-                            setState(() {
-                              _tab = 2;
-                            });
-                          }
-                        },
-                        child: Container(
-                          alignment: Alignment.center,
-                          padding: EdgeInsets.all(12),
-                          margin: EdgeInsets.only(right: 15),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: _tab == 2 ? Colors.blue : Colors.white,
-                              border:
-                                  Border.all(color: Colors.blue, width: 1.5)),
-                          child: Text(
-                            "Meeting",
-                            style: TextStyle(
-                                color: _tab == 2 ? Colors.white : Colors.blue),
-                          ),
-                        )),
-                    GestureDetector(
-                        onTap: () {
-                          if (_tab != 3) {
-                            setState(() {
-                              _tab = 3;
-                            });
-                          }
-                        },
-                        child: Container(
-                          alignment: Alignment.center,
-                          padding: EdgeInsets.all(12),
-                          margin: EdgeInsets.only(right: 15),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: _tab == 3 ? Colors.blue : Colors.white,
-                              border:
-                                  Border.all(color: Colors.blue, width: 1.5)),
-                          child: Text(
-                            "Pengumuman",
-                            style: TextStyle(
-                                color: _tab == 3 ? Colors.white : Colors.blue),
-                          ),
-                        )),
-                  ])),
+              child: ListView(scrollDirection: Axis.horizontal, children: [
+                GestureDetector(
+                    onTap: () {
+                      if (_tab != 0) {
+                        setState(() {
+                          _tab = 0;
+                        });
+                      }
+                    },
+                    child: Container(
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(12),
+                      margin: EdgeInsets.only(right: 15),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: _tab == 0 ? Colors.blue : Colors.white,
+                          border: Border.all(color: Colors.blue, width: 1.5)),
+                      child: Text(
+                        "Materi",
+                        style: TextStyle(
+                            color: _tab == 0 ? Colors.white : Colors.blue),
+                      ),
+                    )),
+                GestureDetector(
+                    onTap: () {
+                      if (_tab != 1) {
+                        setState(() {
+                          _tab = 1;
+                        });
+                      }
+                    },
+                    child: Container(
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(12),
+                      margin: EdgeInsets.only(right: 15),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: _tab == 1 ? Colors.blue : Colors.white,
+                          border: Border.all(color: Colors.blue, width: 1.5)),
+                      child: Text(
+                        "Tugas",
+                        style: TextStyle(
+                            color: _tab == 1 ? Colors.white : Colors.blue),
+                      ),
+                    )),
+                GestureDetector(
+                    onTap: () {
+                      if (_tab != 2) {
+                        setState(() {
+                          _tab = 2;
+                        });
+                      }
+                    },
+                    child: Container(
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(12),
+                      margin: EdgeInsets.only(right: 15),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: _tab == 2 ? Colors.blue : Colors.white,
+                          border: Border.all(color: Colors.blue, width: 1.5)),
+                      child: Text(
+                        "Meeting",
+                        style: TextStyle(
+                            color: _tab == 2 ? Colors.white : Colors.blue),
+                      ),
+                    )),
+                GestureDetector(
+                    onTap: () {
+                      if (_tab != 3) {
+                        setState(() {
+                          _tab = 3;
+                        });
+                      }
+                    },
+                    child: Container(
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(12),
+                      margin: EdgeInsets.only(right: 15),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: _tab == 3 ? Colors.blue : Colors.white,
+                          border: Border.all(color: Colors.blue, width: 1.5)),
+                      child: Text(
+                        "Pengumuman",
+                        style: TextStyle(
+                            color: _tab == 3 ? Colors.white : Colors.blue),
+                      ),
+                    )),
+              ])),
           _tab == 0
               ? MateriList()
               : _tab == 1
@@ -338,7 +332,8 @@ class _CourseViewState extends State<CourseView> {
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
+                                  Icon(Icons.watch_later_outlined,
+                                      size: 16, color: Colors.white),
                                   SizedBox(width: 2),
                                   Text("22 Dec 2023",
                                       style: TextStyle(
@@ -393,7 +388,8 @@ class _CourseViewState extends State<CourseView> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
+                        Icon(Icons.watch_later_outlined,
+                            size: 16, color: Colors.white),
                         SizedBox(width: 2),
                         Text("25 Nov 2023",
                             style: TextStyle(
@@ -445,7 +441,8 @@ class _CourseViewState extends State<CourseView> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
+                        Icon(Icons.watch_later_outlined,
+                            size: 16, color: Colors.white),
                         SizedBox(width: 2),
                         Text("12 Okt 2023",
                             style: TextStyle(
@@ -497,7 +494,11 @@ class _CourseViewState extends State<CourseView> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white,),
+                        Icon(
+                          Icons.watch_later_outlined,
+                          size: 16,
+                          color: Colors.white,
+                        ),
                         SizedBox(width: 2),
                         Text("18 Augt 2023",
                             style: TextStyle(
@@ -548,7 +549,8 @@ class _CourseViewState extends State<CourseView> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
+                        Icon(Icons.watch_later_outlined,
+                            size: 16, color: Colors.white),
                         SizedBox(width: 2),
                         Text("14 Agustus 2023",
                             style: TextStyle(
@@ -598,7 +600,8 @@ class _CourseViewState extends State<CourseView> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.watch_later_outlined, size: 16, color: Colors.white),
+                        Icon(Icons.watch_later_outlined,
+                            size: 16, color: Colors.white),
                         SizedBox(width: 2),
                         Text("14 Agustus 2023",
                             style: TextStyle(

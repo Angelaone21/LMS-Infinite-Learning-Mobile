@@ -29,11 +29,8 @@ class MateriList extends StatelessWidget {
                 child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset(
-                        'assets/images/Open_Book.png',
-                        height: 30,
-                        color: Colors.white
-                      ),
+                      Image.asset('assets/images/Open_Book.png',
+                          height: 30, color: Colors.white),
                       SizedBox(width: 8),
                       Expanded(
                           child: Column(
@@ -175,11 +172,8 @@ class MateriList extends StatelessWidget {
                 child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset(
-                        'assets/images/Open_Book.png',
-                        height: 30,
-                        color: Colors.white
-                      ),
+                      Image.asset('assets/images/Open_Book.png',
+                          height: 30, color: Colors.white),
                       SizedBox(width: 8),
                       Expanded(
                           child: Column(
@@ -228,11 +222,8 @@ class MateriList extends StatelessWidget {
                     Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset(
-                            'assets/images/Open_Book.png',
-                            height: 30,
-                            color: Colors.white
-                          ),
+                          Image.asset('assets/images/Open_Book.png',
+                              height: 30, color: Colors.white),
                           SizedBox(width: 8),
                           Expanded(
                               child: Column(
@@ -321,11 +312,8 @@ class MateriList extends StatelessWidget {
                 child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset(
-                        'assets/images/Open_Book.png',
-                        height: 30,
-                        color: Colors.white
-                      ),
+                      Image.asset('assets/images/Open_Book.png',
+                          height: 30, color: Colors.white),
                       SizedBox(width: 8),
                       Expanded(
                           child: Column(
@@ -425,11 +413,8 @@ class MateriList extends StatelessWidget {
                     Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset(
-                            'assets/images/Open_Book.png',
-                            height: 30,
-                            color: Colors.white
-                          ),
+                          Image.asset('assets/images/Open_Book.png',
+                              height: 30, color: Colors.white),
                           SizedBox(width: 8),
                           Expanded(
                               child: Column(

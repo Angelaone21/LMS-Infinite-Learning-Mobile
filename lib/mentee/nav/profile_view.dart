@@ -50,9 +50,12 @@ class _ProfileViewState extends State<ProfileView> {
                     borderRadius: BorderRadius.circular(10),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.grey.withOpacity(0.3), //color of shadow
-                        spreadRadius: 1, //spread radius
-                        blurRadius: 2, // blur radius
+                        color: Colors.grey.withOpacity(0.3),
+                        //color of shadow
+                        spreadRadius: 1,
+                        //spread radius
+                        blurRadius: 2,
+                        // blur radius
                         offset: Offset(0, 2), // changes position of shadow
                         //first paramerter of offset is left-right
                         //second parameter is top to down

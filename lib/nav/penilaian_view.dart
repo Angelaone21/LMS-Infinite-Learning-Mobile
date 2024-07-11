@@ -88,7 +88,6 @@ class _PenilaianViewState extends State<PenilaianView> {
       child: !_isLoading
           ? LayoutBuilder(builder: (context, constraints) {
               int visibleCount = 6;
-           
 
               return ExpandableTheme(
                 data: ExpandableThemeData(
@@ -151,13 +150,19 @@ class _PenilaianViewState extends State<PenilaianView> {
                                     hintText: "100",
                                     border: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                            color: Color.fromARGB(255, 249, 227, 227), width: 2)),
+                                            color: Color.fromARGB(
+                                                255, 249, 227, 227),
+                                            width: 2)),
                                     focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                            color: Color.fromARGB(255, 249, 227, 227), width: 2)),
+                                            color: Color.fromARGB(
+                                                255, 249, 227, 227),
+                                            width: 2)),
                                     enabledBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                            color: Color.fromARGB(255, 249, 227, 227), width: 2))),
+                                            color: Color.fromARGB(
+                                                255, 249, 227, 227),
+                                            width: 2))),
                               ))
                         ]),
                         GestureDetector(

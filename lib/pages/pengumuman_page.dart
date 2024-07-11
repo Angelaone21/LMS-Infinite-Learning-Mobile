@@ -173,8 +173,7 @@ class _PengumumanPageState extends State<PengumumanPage> {
                           ]),
                         ),
                         SizedBox(height: 10),
-                        Text(
-                            "Hallo Inners, are you ready for Halloween??",
+                        Text("Hallo Inners, are you ready for Halloween??",
                             style: TextStyle(
                                 fontSize: 12,
                                 height: 1.4,
