@@ -216,7 +216,7 @@ class _ProfileViewState extends State<ProfileView> {
                                       fontSize: 12,
                                       color: Colors.grey)),
                               Divider(),
-                              Text("Mentor: Web Development",
+                              Text("Mentee: Web Development",
                                   style: TextStyle(
                                       fontWeight: FontWeight.normal,
                                       fontSize: 12,
@@ -308,7 +308,7 @@ class _ProfileViewState extends State<ProfileView> {
                               fontWeight: FontWeight.bold, fontSize: 13),
                         )),
                         Expanded(
-                            child: Text(":    UI/UX Designer",
+                            child: Text(":    Web Development",
                                 style: TextStyle(
                                     fontWeight: FontWeight.normal,
                                     fontSize: 13))),

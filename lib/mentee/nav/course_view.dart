@@ -314,7 +314,7 @@ class _CourseViewState extends State<CourseView> {
                 child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset('assets/images/profile2.png', height: 34),
+                      Image.asset('assets/images/profile6.png', height: 34),
                       SizedBox(width: 10),
                       Expanded(
                           child: Column(
@@ -369,7 +369,7 @@ class _CourseViewState extends State<CourseView> {
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Image.asset('assets/images/profile2.png', height: 34),
+            Image.asset('assets/images/profile6.png', height: 34),
             SizedBox(width: 10),
             Expanded(
                 child: Column(
@@ -422,7 +422,7 @@ class _CourseViewState extends State<CourseView> {
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Image.asset('assets/images/profile2.png', height: 34),
+            Image.asset('assets/images/profile6.png', height: 34),
             SizedBox(width: 10),
             Expanded(
                 child: Column(
@@ -475,7 +475,7 @@ class _CourseViewState extends State<CourseView> {
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Image.asset('assets/images/profile2.png', height: 34),
+            Image.asset('assets/images/profile7.png', height: 34),
             SizedBox(width: 10),
             Expanded(
                 child: Column(
@@ -531,7 +531,7 @@ class _CourseViewState extends State<CourseView> {
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Image.asset('assets/images/profile2.png', height: 34),
+            Image.asset('assets/images/profile7.png', height: 34),
             SizedBox(width: 10),
             Expanded(
                 child: Column(
@@ -582,7 +582,7 @@ class _CourseViewState extends State<CourseView> {
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Image.asset('assets/images/profile2.png', height: 34),
+            Image.asset('assets/images/profile7.png', height: 34),
             SizedBox(width: 10),
             Expanded(
                 child: Column(

@@ -18,28 +18,51 @@ class _CoursePageState extends State<CoursePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: PreferredSize(
-            preferredSize: Size.fromHeight(80.0), 
+            preferredSize: Size.fromHeight(80.0),
             child: SafeArea(
               child: Container(
-                  alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.symmetric(horizontal: 15),
-                  height: 80,
-                  child: IconButton(
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                      },
-                      icon: Icon(Icons.arrow_back_ios))),
-            )),
+                height: 20,
+                margin: EdgeInsets.symmetric(horizontal: 15),
+                // Tidak ada child di dalam SafeArea
+              ),
+              // child: Row(
+              //   children: [
+              //     IconButton(
+              //       onPressed: () {
+              //         Navigator.of(context).pop();
+              //       },
+              //       icon: Icon(Icons.arrow_back_ios),
+              //     ),
+              //     SizedBox(width: 10), // Spacer between icon and text
+              //     Text(
+              //       "Web Development",
+              //       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              //     ),
+              //   ],
+              // ),
+            )
+        ),
         body: Container(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  child: Text(
-                    "Web Development",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                  )),
+                child: Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                      icon: Icon(Icons.arrow_back_ios),
+                    ),
+                    SizedBox(width: 10), // Spacer between icon and text
+                    Text(
+                      "Web Development 1",
+                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
               SizedBox(height: 20),
               Container(
                   height: 45,
@@ -1645,7 +1668,7 @@ class _CoursePageState extends State<CoursePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Image.asset(
-                        'assets/images/profile.png',
+                        'assets/images/profile6.png',
                         height: 34,
                       ),
                       SizedBox(width: 10),
@@ -1805,7 +1828,7 @@ class _CoursePageState extends State<CoursePage> {
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Image.asset('assets/images/profile.png', height: 34),
+            Image.asset('assets/images/profile6.png', height: 34),
             SizedBox(width: 10),
             Expanded(
                 child: Column(
@@ -1951,7 +1974,7 @@ class _CoursePageState extends State<CoursePage> {
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Image.asset('assets/images/profile.png', height: 34),
+            Image.asset('assets/images/profile6.png', height: 34),
             SizedBox(width: 10),
             Expanded(
                 child: Column(
@@ -2097,7 +2120,7 @@ class _CoursePageState extends State<CoursePage> {
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Image.asset('assets/images/profile.png', height: 34),
+            Image.asset('assets/images/profile6.png', height: 34),
             SizedBox(width: 10),
             Expanded(
                 child: Column(
